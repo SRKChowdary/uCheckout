@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmPayViewController" customModule="UCheckout" customModuleProvider="target">
+            <connections>
+                <outlet property="FinishPaySubView" destination="g69-dU-kXY" id="xDm-YM-m1H"/>
+                <outlet property="bagPriceLabel" destination="GIW-KG-11w" id="UwW-8t-vaz"/>
+                <outlet property="bagsLabel" destination="U18-Zv-55y" id="c7j-pf-uo0"/>
+                <outlet property="cancelOrderButton" destination="MJC-5j-WMo" id="Ga7-E7-nCj"/>
+                <outlet property="cardDetailLabel" destination="kLT-KJ-6q4" id="yKA-dp-e2x"/>
+                <outlet property="cardImage" destination="3Lc-Oh-aaa" id="6xI-R2-EXu"/>
+                <outlet property="changeButton" destination="REZ-Fk-nFe" id="iKp-gm-MVx"/>
+                <outlet property="crossButton" destination="gTT-2r-Zxo" id="SLj-9d-vHt"/>
+                <outlet property="finalPriceLabel" destination="0cq-fI-tpP" id="JOU-Ac-kqg"/>
+                <outlet property="payButton" destination="qtJ-b8-7Ed" id="6h2-rH-mre"/>
+                <outlet property="subTotalCostlabel" destination="X9R-aF-TLJ" id="yTt-AX-0CB"/>
+                <outlet property="subTotalLabel" destination="QMh-Gl-sEa" id="De1-EJ-SaV"/>
+                <outlet property="totalDiscountPriceLabel" destination="HC7-go-Hbj" id="u6b-4U-T9k"/>
+                <outlet property="totalTaxPriceLabel" destination="6Er-v7-kxb" id="wZH-DR-Zep"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-91-ODC">
+                    <rect key="frame" x="0.0" y="487" width="414" height="375"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEh-Y6-bSx">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish &amp; Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxr-0P-38U">
+                                    <rect key="frame" x="20" y="10" width="97" height="20.5"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTT-2r-Zxo">
+                                    <rect key="frame" x="360" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="S85-5Z-0m6"/>
+                                        <constraint firstAttribute="width" constant="40" id="jwO-Dd-bBW"/>
+                                    </constraints>
+                                    <state key="normal" image="close"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="gTT-2r-Zxo" secondAttribute="trailing" constant="14" id="6VM-D8-3AF"/>
+                                <constraint firstItem="cxr-0P-38U" firstAttribute="leading" secondItem="QEh-Y6-bSx" secondAttribute="leading" constant="20" id="8Cn-P1-Bb7"/>
+                                <constraint firstItem="cxr-0P-38U" firstAttribute="centerY" secondItem="QEh-Y6-bSx" secondAttribute="centerY" id="OQ3-TS-nFg"/>
+                                <constraint firstItem="gTT-2r-Zxo" firstAttribute="centerY" secondItem="QEh-Y6-bSx" secondAttribute="centerY" id="dm0-o6-nh1"/>
+                                <constraint firstAttribute="height" constant="40" id="qpX-NI-fDK"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g69-dU-kXY">
+                            <rect key="frame" x="0.0" y="40" width="414" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-Fk-nFe">
+                                    <rect key="frame" x="317" y="12.5" width="85" height="35"/>
+                                    <color key="backgroundColor" name="AppRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="Bhq-YA-odY"/>
+                                        <constraint firstAttribute="width" constant="85" id="ge9-3y-biG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="13"/>
+                                    <state key="normal" title="CHANGE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cardChangeAction:" destination="-1" eventType="touchUpInside" id="AzI-Ng-cLL"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visacard" translatesAutoresizingMaskIntoConstraints="NO" id="3Lc-Oh-aaa">
+                                    <rect key="frame" x="20" y="19" width="35" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="Sc3-e5-pDY"/>
+                                        <constraint firstAttribute="height" constant="22" id="Ssn-fI-dpx"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visa Credit - 9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLT-KJ-6q4">
+                                    <rect key="frame" x="65" y="21" width="242" height="18"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="REZ-Fk-nFe" firstAttribute="centerY" secondItem="g69-dU-kXY" secondAttribute="centerY" id="1r2-FJ-Ft2"/>
+                                <constraint firstItem="kLT-KJ-6q4" firstAttribute="centerY" secondItem="g69-dU-kXY" secondAttribute="centerY" id="4pO-sQ-Q6K"/>
+                                <constraint firstItem="3Lc-Oh-aaa" firstAttribute="centerY" secondItem="g69-dU-kXY" secondAttribute="centerY" id="HEk-kb-Xtc"/>
+                                <constraint firstItem="3Lc-Oh-aaa" firstAttribute="leading" secondItem="g69-dU-kXY" secondAttribute="leading" constant="20" id="Krv-I6-cbx"/>
+                                <constraint firstAttribute="trailing" secondItem="REZ-Fk-nFe" secondAttribute="trailing" constant="12" id="Yyz-gQ-fxo"/>
+                                <constraint firstItem="REZ-Fk-nFe" firstAttribute="leading" secondItem="kLT-KJ-6q4" secondAttribute="trailing" constant="10" id="Z9t-wr-YxK"/>
+                                <constraint firstItem="kLT-KJ-6q4" firstAttribute="leading" secondItem="3Lc-Oh-aaa" secondAttribute="trailing" constant="10" id="cwE-uf-VZ7"/>
+                                <constraint firstAttribute="height" constant="60" id="moe-vj-beF"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O03-Vl-i4o">
+                            <rect key="frame" x="10" y="317" width="394" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJC-5j-WMo">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="44"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                    <state key="normal" title="CANCEL ORDER">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="SUG-0F-CQd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-b8-7Ed">
+                                    <rect key="frame" x="207" y="0.0" width="187" height="44"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                    <state key="normal" title="PAY">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="payButtonAction:" destination="-1" eventType="touchUpInside" id="8RO-MU-Byd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="voA-fH-pNW"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cBK-aO-VNx">
+                            <rect key="frame" x="20" y="120" width="374" height="120"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zKW-Ce-Epf">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bags(22 items)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U18-Zv-55y">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIW-KG-11w">
+                                            <rect key="frame" x="192" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YeQ-Zt-Bhs">
+                                    <rect key="frame" x="0.0" y="30" width="374" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubTotal ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMh-Gl-sEa">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-aF-TLJ">
+                                            <rect key="frame" x="192" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sqK-ex-yum">
+                                    <rect key="frame" x="0.0" y="60" width="374" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applied Discounts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70e-tY-qJT">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <color key="textColor" name="AppRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-go-Hbj">
+                                            <rect key="frame" x="192" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <color key="textColor" name="AppRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-tg-hqg">
+                                    <rect key="frame" x="0.0" y="90" width="374" height="30"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn8-PX-i0Z">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-v7-kxb">
+                                            <rect key="frame" x="192" y="0.0" width="182" height="30"/>
+                                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="JYo-9H-wo6"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="TwC-a4-Ydj">
+                            <rect key="frame" x="20" y="249" width="374" height="26.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZC-sq-1t2">
+                                    <rect key="frame" x="0.0" y="0.0" width="52" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cq-fI-tpP">
+                                    <rect key="frame" x="346.5" y="0.0" width="27.5" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26.5" id="rfL-Zd-pUa"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="g69-dU-kXY" firstAttribute="top" secondItem="QEh-Y6-bSx" secondAttribute="bottom" id="6OF-I8-qGU"/>
+                        <constraint firstAttribute="trailing" secondItem="O03-Vl-i4o" secondAttribute="trailing" constant="10" id="7rc-KG-dVU"/>
+                        <constraint firstItem="cBK-aO-VNx" firstAttribute="top" secondItem="g69-dU-kXY" secondAttribute="bottom" constant="20" id="Kbh-XG-jTp"/>
+                        <constraint firstItem="TwC-a4-Ydj" firstAttribute="top" secondItem="cBK-aO-VNx" secondAttribute="bottom" constant="9" id="NhG-kP-zLo"/>
+                        <constraint firstItem="TwC-a4-Ydj" firstAttribute="leading" secondItem="Sma-91-ODC" secondAttribute="leading" constant="20" id="Nig-R7-SQY"/>
+                        <constraint firstAttribute="height" constant="375" id="Nvo-sR-NRg"/>
+                        <constraint firstItem="QEh-Y6-bSx" firstAttribute="leading" secondItem="Sma-91-ODC" secondAttribute="leading" id="Qwj-tm-DbR"/>
+                        <constraint firstItem="cBK-aO-VNx" firstAttribute="leading" secondItem="Sma-91-ODC" secondAttribute="leading" constant="20" id="R2s-IN-jWW"/>
+                        <constraint firstAttribute="bottom" secondItem="O03-Vl-i4o" secondAttribute="bottom" constant="14" id="aJl-ll-xb5"/>
+                        <constraint firstAttribute="trailing" secondItem="TwC-a4-Ydj" secondAttribute="trailing" constant="20" id="asc-w0-P8Y"/>
+                        <constraint firstAttribute="trailing" secondItem="QEh-Y6-bSx" secondAttribute="trailing" id="d0p-DY-ySN"/>
+                        <constraint firstItem="QEh-Y6-bSx" firstAttribute="top" secondItem="Sma-91-ODC" secondAttribute="top" id="mJp-Qo-04V"/>
+                        <constraint firstAttribute="trailing" secondItem="g69-dU-kXY" secondAttribute="trailing" id="mgh-xX-nDs"/>
+                        <constraint firstAttribute="trailing" secondItem="cBK-aO-VNx" secondAttribute="trailing" constant="20" id="ub2-cL-E18"/>
+                        <constraint firstItem="g69-dU-kXY" firstAttribute="leading" secondItem="Sma-91-ODC" secondAttribute="leading" id="uoz-gJ-Sb2"/>
+                        <constraint firstItem="O03-Vl-i4o" firstAttribute="leading" secondItem="Sma-91-ODC" secondAttribute="leading" constant="10" id="vuI-iE-tEe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sma-91-ODC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2e8-tn-9kF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sma-91-ODC" secondAttribute="trailing" id="3XU-sE-XpI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Sma-91-ODC" secondAttribute="bottom" id="aA6-yR-h4X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="133.92857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="14" height="15"/>
+        <image name="visacard" width="35" height="23"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

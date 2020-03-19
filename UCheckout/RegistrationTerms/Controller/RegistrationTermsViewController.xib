@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationTermsViewController" customModule="UCheckout" customModuleProvider="target">
+            <connections>
+                <outlet property="aboveCheckBoxButton" destination="PjU-1O-jdN" id="NiH-YL-IP5"/>
+                <outlet property="acceptButtonOutlet" destination="QSu-2k-QbW" id="2V2-bw-A2f"/>
+                <outlet property="belowCheckboxLabel" destination="MQK-Y3-Qfu" id="Yxd-13-qFK"/>
+                <outlet property="belowcheckBoxButton" destination="Hf8-s4-1T4" id="aUX-D2-7HL"/>
+                <outlet property="declineButtonOutlet" destination="e5u-sx-znb" id="lgg-UC-Ra1"/>
+                <outlet property="termsTextView" destination="Fyy-Us-MFM" id="G3p-lu-Hw6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epG-dw-NLX">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-YU-SgU">
+                            <rect key="frame" x="121" y="12" width="133" height="20.5"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov0-oM-SeX">
+                            <rect key="frame" x="330" y="7" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Ylv-PQ-Z0N"/>
+                                <constraint firstAttribute="height" constant="30" id="wCc-cz-dYD"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="ic_Close_White"/>
+                            <connections>
+                                <action selector="crossButtonAction:" destination="-1" eventType="touchUpInside" id="crh-Dd-uOg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ov0-oM-SeX" firstAttribute="centerY" secondItem="epG-dw-NLX" secondAttribute="centerY" id="EJy-6Y-lLN"/>
+                        <constraint firstAttribute="height" constant="44" id="M1Q-9U-z6T"/>
+                        <constraint firstItem="BA3-YU-SgU" firstAttribute="centerX" secondItem="epG-dw-NLX" secondAttribute="centerX" id="WjL-zd-g35"/>
+                        <constraint firstAttribute="trailing" secondItem="Ov0-oM-SeX" secondAttribute="trailing" constant="15" id="hoy-uU-VEu"/>
+                        <constraint firstItem="BA3-YU-SgU" firstAttribute="centerY" secondItem="epG-dw-NLX" secondAttribute="centerY" id="vjD-7I-cMO"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyy-Us-MFM">
+                    <rect key="frame" x="16" y="80" width="343" height="405"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <mutableString key="text">November 6, 2019
+
+U checkout App Terms and Conditions
+
+Overview.  The U checkout payment mobile application allows our just for U® accountholders to use their mobile device to scan barcodes on Products they wish to purchase while shopping in select Albertsons Companies family of grocery store locations and to skip the traditional in-store checkout line by paying for those Products on their mobile device. 
+Agreement; Changes.  U checkout (the “App”) is an Albertsons Companies family of grocery stores mobile application.  By using the App, you agree to be bound by these U checkout App Terms and Conditions (“Terms and Conditions”), the separate Albertsons Companies Terms of Use [www.albertsonscompanies.com/about-us/our-policies/terms-of-use.html] and our Privacy Policy [https://www.albertsonscompanies.com/about-us/our-policies/privacy-policy.html], which are incorporated herein by reference.  
+When you download the App, you will be prompted to “click” on a button to agree to the most recently updated version of these Terms and Conditions.  By doing so, you indicate that you have read, understand and agree to these Terms and Conditions. In all other circumstances, by accessing and/or using the App, you agree to be bound by the then-current version of these Terms and Conditions, which may be updated from time to time without notice to you. Any modifications will be effective upon posting of the updated Terms and Conditions, and your access to and/or use of the App thereafter will constitute your acceptance of such modified Terms and Conditions. Please note the date these Terms and Conditions were last modified and review these Terms and Conditions on a regular basis. If you do not agree to these Terms and Conditions, please do not use the App. 
+Requirements for Use; Conduct.  Anyone can download the App from an App store.  To use the App you must comply with these requirements:
+	•	Be at least 18 years of age;
+	•	Have a valid just for U account with login credentials;
+	•	Enter valid payment card information from among the accepted cards listed in the App where indicated in the App prior to checkout and keep that information up to date;
+	•	Be present at a participating Albertsons Companies family of grocery stores location at the time of App use;
+	•	Be logged into your just for U account at the time of App use;
+	•	Enable location settings on your mobile device at the time of App use;
+	•	Follow all prompts and notifications in the App, such as the hours U checkout can be used and any item limits applicable to the store location; 
+	•	Present your digital receipt and/or purchase confirmation to the store attendant before leaving the store location;
+	•	Cooperate in any requested inspections of the contents of your cart, Product price and match verification, order total verification, rescanning of Products, and permitting in-store personnel to review the contents of the App on your device for the above and similar purposes;
+	•	Agree to the collection of location data from your mobile device;
+	•	Provide valid photo identification upon request;
+	•	Notify your financial institution and notify us at (877) 258-2799, if your device is lost or stolen or your just for U account is or may have been compromised.
+
+Limitations on Use; Termination.
+
+	•	There is a limit on the number of items you can purchase via the App in a single transaction which is identified in the App for your store location;
+	•	The App works only when you are in the store and once the App processes verification that you have left the store, the Products you scanned to your App will be cleared out;
+	•	If you are unwilling and unable to scan Products you wish to purchase, or to comply with any of the requirements of these Terms and Conditions, you cannot use the App to complete your grocery purchase transaction and must use traditional in-store checkout;
+	•	The App is only available for use in select Albertsons Companies family of grocery stores locations and only during certain hours identified in the App, which differ from general store hours and from store to store, as noted in the App for your store location;
+	•	Certain Products sold in-store are not available for purchase through the App, such as gift cards, lottery tickets and some seasonal items;
+	•	Only just for U and select digital coupons can be used via the App, physical or paper coupons require traditional in-store checkout;
+	•	The purchase of age-restricted Products such as alcoholic beverages or tobacco products, where permitted, requires in-store age verification by providing the checkout attendant with valid (non-expired, government issued) identification confirming identity and age, and must be completed by the attendant at an attended checkout terminal;
+	•	The Product prices reflected in the App at the time of scanning are estimated prices only; your transaction is subject to verification following self checkout and your transaction total shown in your purchase confirmation at the time of self checkout may differ from the amount  reflected in the final receipt posted to your account;
+	•	Your final receipt will be posted to your account and available through the App following verification; please allow up to 60 seconds for verification to be completed;
+	•	Any personalized discounts, savings, coupon redemptions, taxes, bottle/can deposits and redemption values, and bag fees (if any) will be calculated upon checkout and reflected in the receipt posted to your account;
+	•	The in-store self scanning and checkout program enabled by the App may be changed, suspended or discontinued at any time without notice to you;
+	•	The App may be suspended or discontinued and/or removed from any App store at any time without notice;
+	•	We may suspend or terminate your access to and use of the App at any time, for any reason or no reason, without notice to you; 
+	•	If your account is suspended or terminated, you may no longer participate in the in-store store scanning and self checkout program and may not create/use duplicate accounts for purposes of avoiding of the suspension or termination.
+
+Price or Order Total Errors and Resolution.
+
+	•	You agree to bring any prices or order total that you believe to be in error to the store attendant before leaving the store location;
+	•	You acknowledge that Product images displayed in the App may differ from the actual Products found in store;
+	•	You agree to pay any difference immediately should any error resulting an underpayment be found during verification following self checkout; 
+	•	You agree to return to the store of purchase and present the digital purchase confirmation/receipt for your order in the event of any Product return.
+
+Disclaimers.
+
+	•	We reserve the right to verify validity of payment card information at the time it is added to your account and at checkout including running a temporary pre-authorization charge that will not be completed and will be removed from your card in accordance with the terms of your issuing bank;
+	•	We are not responsible for any inability to use the App or portions of it due to software failures, connectivity/device issues, expired payment card information, policies of your payment card processor or payment card rejections such as for insufficient funds or payment card processor errors;
+	•	You are responsible for all carrier data or other charges that may apply to your use of the App;
+	•	Your use of the App may also be governed by the terms and policies of your mobile network provider, the app store from which you download the App, your device manufacturer or operating system/software provider, and payment card or third party payment provider;  
+	•	Use of the App may transmit data concerning your use of the App to us or to third parties such as your payment provider.  This information may include geolocation data (where you are and where Albertsons Companies family of grocery stores are located) or payment data.  Refer to our Privacy Policy [https://www.albertsonscompanies.com/about-us/our-policies/privacy-policy.html] and the Geo-Location Terms section of the Albertsons Companies Terms of Use [www.albertsonscompanies.com/about-us/our-policies/terms-of-use.html] for more information; 
+	•	These Terms and Conditions are not a sale of the App or any copy thereof, and we and our third party licensors or suppliers retain all rights, title, and interest in and to the App (and any copy of the App); 
+	•	Additional limitations of warranties and liability and dispute resolution procedures apply and can be found in the Albertsons Companies Terms of Use [www.albertsonscompanies.com/about-us/our-policies/terms-of-use.html].
+
+Notice to North Carolina Customers
+: By using the App, you consent and have not withdrawn your consent to completing your grocery transaction by electronic means. You may withdraw this consent by not completing the grocery order.  You have the right to receive a paper record of your transaction, which you may do within 30 days by contacting our Customer Support line toll-free at (877) 258-2799, between 8:00 am and 9:00 pm local time, seven days a week (except for major holidays and/or other days specified each year). 
+Questions or Concerns Regarding the App.  If you have questions or concerns regarding the App or your use of it, please see the store attendant or you can contact our Customer Support line toll free at (877) 258-2799, between 8:00 am and 9:00 pm in your local time zone, seven days a week (except for major holidays and/or other days specified each year). 
+</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsH-xO-D6c">
+                    <rect key="frame" x="0.0" y="493" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="y76-wV-GH9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FZd-p2-dKS">
+                    <rect key="frame" x="12" y="502" width="351" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-1O-jdN">
+                            <rect key="frame" x="0.0" y="4" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="DAj-NZ-Sfo"/>
+                                <constraint firstAttribute="height" constant="24" id="fLL-4I-bic"/>
+                            </constraints>
+                            <state key="normal" image="checkboxoff"/>
+                            <connections>
+                                <action selector="aboveCheckBoxButtonAction:" destination="-1" eventType="touchUpInside" id="whD-8d-hlG"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agree to the U checkout app Terms and Conditions, above." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPA-BO-Suy">
+                            <rect key="frame" x="34" y="1.5" width="240" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="oLJ-nZ-Nfg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PjU-1O-jdN" firstAttribute="leading" secondItem="FZd-p2-dKS" secondAttribute="leading" id="4sm-jG-YpL"/>
+                        <constraint firstAttribute="height" constant="32" id="ckr-SP-Wth"/>
+                        <constraint firstItem="PjU-1O-jdN" firstAttribute="centerY" secondItem="FZd-p2-dKS" secondAttribute="centerY" id="jkv-bQ-62e"/>
+                        <constraint firstItem="vPA-BO-Suy" firstAttribute="leading" secondItem="PjU-1O-jdN" secondAttribute="trailing" constant="10" id="oze-Ig-97I"/>
+                        <constraint firstItem="vPA-BO-Suy" firstAttribute="centerY" secondItem="FZd-p2-dKS" secondAttribute="centerY" id="yie-yc-6Jj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xzg-GS-DCT">
+                    <rect key="frame" x="0.0" y="542" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="of2-kA-q6a"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VL-1H-sYF">
+                    <rect key="frame" x="12" y="551" width="351" height="32"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf8-s4-1T4">
+                            <rect key="frame" x="0.0" y="4" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="7nq-gG-KLs"/>
+                                <constraint firstAttribute="width" constant="24" id="h1z-zF-tYG"/>
+                            </constraints>
+                            <state key="normal" image="checkboxoff"/>
+                            <connections>
+                                <action selector="belowCheckBoxButtonAction:" destination="-1" eventType="touchUpInside" id="9WB-fP-Zgs"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agree to Safeway’s general Terms of Use." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQK-Y3-Qfu">
+                            <rect key="frame" x="34" y="1.5" width="240" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="jyo-NC-k6A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MQK-Y3-Qfu" firstAttribute="centerY" secondItem="1VL-1H-sYF" secondAttribute="centerY" id="9ca-Kv-uDN"/>
+                        <constraint firstAttribute="height" constant="32" id="QBl-7f-xwq"/>
+                        <constraint firstItem="Hf8-s4-1T4" firstAttribute="centerY" secondItem="1VL-1H-sYF" secondAttribute="centerY" id="oWJ-Cb-WXx"/>
+                        <constraint firstItem="Hf8-s4-1T4" firstAttribute="leading" secondItem="1VL-1H-sYF" secondAttribute="leading" id="s2N-et-EQp"/>
+                        <constraint firstItem="MQK-Y3-Qfu" firstAttribute="leading" secondItem="Hf8-s4-1T4" secondAttribute="trailing" constant="10" id="vWh-1l-gmU"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TIh-uQ-pJu">
+                    <rect key="frame" x="12" y="603" width="351" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-sx-znb">
+                            <rect key="frame" x="0.0" y="0.0" width="168" height="40"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="13"/>
+                            <state key="normal" title="DECLINE" backgroundImage="rectangleCopyWhite">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="declineButtonAction:" destination="-1" eventType="touchUpInside" id="kKh-vf-L2x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSu-2k-QbW">
+                            <rect key="frame" x="183" y="0.0" width="168" height="40"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="13"/>
+                            <state key="normal" title="ACCEPT &amp; CONTINUE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="AcceptButtonAction:" destination="-1" eventType="touchUpInside" id="ISC-Oy-lh6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xC8-tv-p1C"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="epG-dw-NLX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5cK-ei-jFj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TIh-uQ-pJu" secondAttribute="trailing" constant="12" id="6XY-lL-Laa"/>
+                <constraint firstItem="dsH-xO-D6c" firstAttribute="top" secondItem="Fyy-Us-MFM" secondAttribute="bottom" constant="8" id="Bsl-XI-99a"/>
+                <constraint firstItem="Fyy-Us-MFM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="EGo-zK-jtM"/>
+                <constraint firstItem="1VL-1H-sYF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FFM-W6-oGF"/>
+                <constraint firstItem="1VL-1H-sYF" firstAttribute="top" secondItem="Xzg-GS-DCT" secondAttribute="bottom" constant="8" id="GC8-WI-sM5"/>
+                <constraint firstItem="TIh-uQ-pJu" firstAttribute="top" secondItem="1VL-1H-sYF" secondAttribute="bottom" constant="20" id="KTs-y7-AdU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fyy-Us-MFM" secondAttribute="trailing" constant="16" id="LDu-sx-tws"/>
+                <constraint firstAttribute="trailing" secondItem="dsH-xO-D6c" secondAttribute="trailing" id="Lya-a5-U2o"/>
+                <constraint firstItem="epG-dw-NLX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MF5-e0-m0p"/>
+                <constraint firstItem="Xzg-GS-DCT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NL5-vv-egd"/>
+                <constraint firstItem="Fyy-Us-MFM" firstAttribute="top" secondItem="epG-dw-NLX" secondAttribute="bottom" constant="16" id="QQP-HY-yje"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TIh-uQ-pJu" secondAttribute="bottom" constant="24" id="UFI-zc-SnW"/>
+                <constraint firstItem="FZd-p2-dKS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="URA-R4-fQr"/>
+                <constraint firstItem="Xzg-GS-DCT" firstAttribute="top" secondItem="FZd-p2-dKS" secondAttribute="bottom" constant="8" id="VOb-cQ-bPH"/>
+                <constraint firstAttribute="trailing" secondItem="epG-dw-NLX" secondAttribute="trailing" id="WRj-8X-Kjp"/>
+                <constraint firstItem="TIh-uQ-pJu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="YvY-48-VwS"/>
+                <constraint firstItem="dsH-xO-D6c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bqy-ef-cRh"/>
+                <constraint firstItem="FZd-p2-dKS" firstAttribute="top" secondItem="dsH-xO-D6c" secondAttribute="bottom" constant="8" id="btg-C0-NUM"/>
+                <constraint firstItem="1VL-1H-sYF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="lUe-5j-aIN"/>
+                <constraint firstAttribute="trailing" secondItem="Xzg-GS-DCT" secondAttribute="trailing" id="sAb-Hx-KhQ"/>
+                <constraint firstItem="FZd-p2-dKS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wo1-jZ-wUa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkboxoff" width="24" height="24"/>
+        <image name="ic_Close_White" width="17" height="17"/>
+        <image name="rectangleCopyWhite" width="142" height="42"/>
+    </resources>
+</document>

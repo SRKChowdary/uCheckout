@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remove Card View Controller-->
+        <scene sceneID="Pyx-Xl-tJK">
+            <objects>
+                <viewController storyboardIdentifier="RemoveCardViewController" id="5fc-jm-nsx" customClass="RemoveCardViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEs-v6-z5o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqR-3F-Nep">
+                                <rect key="frame" x="20" y="70" width="335" height="547"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQJ-a9-RQd">
+                                        <rect key="frame" x="312" y="5" width="14" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeIconDidTapped:" destination="5fc-jm-nsx" eventType="touchUpInside" id="vzy-VM-tnv"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageErrorFlow" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-cP-WdU">
+                                        <rect key="frame" x="133" y="73" width="69" height="69"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="ek7-ph-0h1"/>
+                                            <constraint firstAttribute="width" constant="69" id="wLM-Ly-QaW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KX-e1-g1K">
+                                        <rect key="frame" x="19" y="184" width="134.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to remove this card from your wallet?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fO7-gN-Skq">
+                                        <rect key="frame" x="19" y="228.5" width="297" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjU-fJ-ffh">
+                                        <rect key="frame" x="107" y="502" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.72088354825973511" green="0.1775585412979126" blue="0.16072410345077515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Hs4-CD-x2V"/>
+                                            <constraint firstAttribute="height" constant="30" id="Kru-ji-lFp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonDidTapped:" destination="5fc-jm-nsx" eventType="touchUpInside" id="QdI-RI-7P3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbL-CE-Dby">
+                                        <rect key="frame" x="222" y="502" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.21591335535049438" green="0.48814940452575684" blue="0.29801040887832642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Yh8-yo-IUs"/>
+                                            <constraint firstAttribute="width" constant="100" id="f9q-xi-9Ti"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="REMOVE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeButtonDidTapped:" destination="5fc-jm-nsx" eventType="touchUpInside" id="qeS-D3-SnL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fO7-gN-Skq" secondAttribute="trailing" constant="19" id="1z7-gt-Qfv"/>
+                                    <constraint firstAttribute="bottom" secondItem="LjU-fJ-ffh" secondAttribute="bottom" constant="15" id="DNg-cM-4WB"/>
+                                    <constraint firstItem="GqD-cP-WdU" firstAttribute="top" secondItem="VqR-3F-Nep" secondAttribute="top" constant="73" id="Eym-ex-yPX"/>
+                                    <constraint firstItem="fO7-gN-Skq" firstAttribute="leading" secondItem="VqR-3F-Nep" secondAttribute="leading" constant="19" id="M6j-Ro-L9g"/>
+                                    <constraint firstAttribute="bottom" secondItem="WbL-CE-Dby" secondAttribute="bottom" constant="15" id="Ymn-O1-GaI"/>
+                                    <constraint firstItem="1KX-e1-g1K" firstAttribute="top" secondItem="GqD-cP-WdU" secondAttribute="bottom" constant="42" id="ZP9-ed-0PI"/>
+                                    <constraint firstAttribute="trailing" secondItem="WbL-CE-Dby" secondAttribute="trailing" constant="13" id="h3B-95-AnH"/>
+                                    <constraint firstItem="1KX-e1-g1K" firstAttribute="leading" secondItem="VqR-3F-Nep" secondAttribute="leading" constant="19" id="jrT-Up-R6r"/>
+                                    <constraint firstItem="GqD-cP-WdU" firstAttribute="centerX" secondItem="VqR-3F-Nep" secondAttribute="centerX" id="meB-MD-tUj"/>
+                                    <constraint firstItem="WbL-CE-Dby" firstAttribute="leading" secondItem="LjU-fJ-ffh" secondAttribute="trailing" constant="15" id="nEd-bh-cvX"/>
+                                    <constraint firstItem="fO7-gN-Skq" firstAttribute="top" secondItem="1KX-e1-g1K" secondAttribute="bottom" constant="18" id="wj5-Q3-P6p"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aUw-Sk-23Q" firstAttribute="trailing" secondItem="VqR-3F-Nep" secondAttribute="trailing" constant="20" id="3pm-Gj-zlx"/>
+                            <constraint firstItem="VqR-3F-Nep" firstAttribute="top" secondItem="aUw-Sk-23Q" secondAttribute="top" constant="50" id="p06-Ze-nZ4"/>
+                            <constraint firstItem="VqR-3F-Nep" firstAttribute="leading" secondItem="aUw-Sk-23Q" secondAttribute="leading" constant="20" id="pHx-tm-DS5"/>
+                            <constraint firstItem="aUw-Sk-23Q" firstAttribute="bottom" secondItem="VqR-3F-Nep" secondAttribute="bottom" constant="50" id="tm4-oP-vnZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aUw-Sk-23Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkO-FK-rV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="14" height="15"/>
+        <image name="imageErrorFlow" width="30" height="30"/>
+    </resources>
+</document>

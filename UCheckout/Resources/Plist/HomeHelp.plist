@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>homeData</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>homeHelpImage1</string>
+			<key>message</key>
+			<string>For Bulk, bakery, and produce items, key in PLU code here.</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>homeHelpImage2</string>
+			<key>message</key>
+			<string>To begin scanning process, press here!</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>homeHelpImage3</string>
+			<key>message</key>
+			<string>Every time you see the help icon, it tells you what to do!</string>
+		</dict>
+	</array>
+</dict>
+</plist>

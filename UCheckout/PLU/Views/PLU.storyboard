@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Base View Controller-->
+        <scene sceneID="A1K-B3-vao">
+            <objects>
+                <viewController storyboardIdentifier="PLUBaseViewController" id="e1j-x1-rJG" customClass="PLUBaseViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqp-oT-OFt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1N-0t-NO0" customClass="CustomNavigationBarView" customModule="UCheckout" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="G9l-n8-aXX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYw-2P-epw">
+                                <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-5M-ZWO">
+                                        <rect key="frame" x="310" y="5.5" width="40" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="biA-1S-0L2"/>
+                                            <constraint firstAttribute="width" constant="40" id="tkL-vc-HiI"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="30" maxX="20" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="27" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" backgroundImage="helpIcon"/>
+                                        <connections>
+                                            <action selector="helpButtonAction:" destination="e1j-x1-rJG" eventType="touchUpInside" id="Dff-35-mze"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPL-Fe-oN5">
+                                        <rect key="frame" x="50" y="8" width="58" height="48"/>
+                                        <accessibility key="accessibilityConfiguration" label="Enter Product Look Up"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="X3s-zY-e9S"/>
+                                            <constraint firstAttribute="width" constant="58" id="u0V-0J-bco"/>
+                                        </constraints>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="45" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" backgroundImage="iconIcBlkKeypad"/>
+                                        <connections>
+                                            <action selector="enablekeyboardOnPLU:" destination="e1j-x1-rJG" eventType="touchUpInside" id="JDh-gl-sl7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CPL-Fe-oN5" firstAttribute="centerY" secondItem="sYw-2P-epw" secondAttribute="centerY" id="ArF-gl-4d9"/>
+                                    <constraint firstAttribute="height" constant="64" id="L5V-zX-Eo7"/>
+                                    <constraint firstItem="CPL-Fe-oN5" firstAttribute="leading" secondItem="sYw-2P-epw" secondAttribute="leading" constant="50" id="ah4-ti-Pja"/>
+                                    <constraint firstItem="3Ua-5M-ZWO" firstAttribute="centerY" secondItem="sYw-2P-epw" secondAttribute="centerY" id="pkg-dJ-YKH"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Ua-5M-ZWO" secondAttribute="trailing" constant="64" id="y3E-Yc-sfg"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageTomatoPlu" translatesAutoresizingMaskIntoConstraints="NO" id="egp-q8-y5q">
+                                <rect key="frame" x="145" y="291" width="124" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="1Kk-kK-Tz5"/>
+                                    <constraint firstAttribute="height" constant="100" id="IGJ-X8-DcS"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="HED-4J-jp4">
+                                <rect key="frame" x="115" y="409" width="184" height="78"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter PLU code below" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d80-C6-cUz">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" label="Enter Product Look Up Code below"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="3Xm-fg-BQH"/>
+                                            <constraint firstAttribute="width" constant="184" id="daV-Xt-pep"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhq-bw-8yT">
+                                        <rect key="frame" x="17" y="38" width="150" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLU:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYJ-nm-ohy">
+                                                <rect key="frame" x="15" y="9.5" width="35.5" height="21"/>
+                                                <accessibility key="accessibilityConfiguration" label="Product Look Up"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="10A-Kj-HUs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="4011" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-8n-fD7">
+                                                <rect key="frame" x="55.5" y="11.5" width="79.5" height="17"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="NO"/>
+                                                </accessibility>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="e1j-x1-rJG" id="gtA-Oe-SI1"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="LYJ-nm-ohy" firstAttribute="centerY" secondItem="Vhq-bw-8yT" secondAttribute="centerY" id="N5g-pd-aAW"/>
+                                            <constraint firstItem="WJb-8n-fD7" firstAttribute="leading" secondItem="LYJ-nm-ohy" secondAttribute="trailing" constant="5" id="Rc6-cb-XJe"/>
+                                            <constraint firstAttribute="width" constant="150" id="T8J-wk-tCB"/>
+                                            <constraint firstItem="LYJ-nm-ohy" firstAttribute="leading" secondItem="Vhq-bw-8yT" secondAttribute="leading" constant="15" id="Vez-CS-Stj"/>
+                                            <constraint firstItem="WJb-8n-fD7" firstAttribute="centerY" secondItem="Vhq-bw-8yT" secondAttribute="centerY" id="cSb-V2-IqE"/>
+                                            <constraint firstAttribute="trailing" secondItem="WJb-8n-fD7" secondAttribute="trailing" constant="15" id="dTo-bi-ooO"/>
+                                            <constraint firstAttribute="height" constant="40" id="hpZ-zw-38K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FVG-4V-Ow1" customClass="RoundButton" customModule="UCheckout" customModuleProvider="target">
+                                <rect key="frame" x="163" y="745" width="88" height="88"/>
+                                <accessibility key="accessibilityConfiguration" label="Scan"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="4je-SH-Ca9"/>
+                                    <constraint firstAttribute="height" constant="88" id="EkT-AB-0Vt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="35"/>
+                                <inset key="imageEdgeInsets" minX="25" minY="40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="fill1"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="e1j-x1-rJG" eventType="touchUpInside" id="rDS-Hb-PpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-dC-9Hc">
+                                <rect key="frame" x="10" y="557" width="394" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tmN-Pf-gAb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtonAction:" destination="e1j-x1-rJG" eventType="touchUpInside" id="7ay-X4-cgW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-7U-xcb">
+                                <rect key="frame" x="138.5" y="500" width="181" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="How to find a Product Look up Code"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xvd-ah-BkJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="How to find a PLU code ?"/>
+                                <connections>
+                                    <action selector="pluCodeInformation:" destination="e1j-x1-rJG" eventType="touchUpInside" id="eFl-yb-HoY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-SV-45X">
+                                <rect key="frame" x="115" y="506" width="19" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="e33-tJ-Qdg"/>
+                                    <constraint firstAttribute="height" constant="19" id="wTQ-uk-f9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Button" image="information"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3TB-dC-9Hc" firstAttribute="top" secondItem="Jmc-SV-45X" secondAttribute="bottom" constant="32" id="42q-7g-zcd"/>
+                            <constraint firstItem="e1N-0t-NO0" firstAttribute="leading" secondItem="jqp-oT-OFt" secondAttribute="leading" id="5YU-wC-ftU"/>
+                            <constraint firstItem="3TB-dC-9Hc" firstAttribute="leading" secondItem="sNb-Za-Ucq" secondAttribute="leading" constant="10" id="AaH-Iq-qIZ"/>
+                            <constraint firstItem="sNb-Za-Ucq" firstAttribute="trailing" secondItem="TAh-7U-xcb" secondAttribute="trailing" constant="94.5" id="FVi-WK-POu"/>
+                            <constraint firstItem="egp-q8-y5q" firstAttribute="centerX" secondItem="jqp-oT-OFt" secondAttribute="centerX" id="Ffy-CM-kwM"/>
+                            <constraint firstItem="3TB-dC-9Hc" firstAttribute="top" secondItem="TAh-7U-xcb" secondAttribute="bottom" constant="27" id="H3f-yC-rSn"/>
+                            <constraint firstItem="3TB-dC-9Hc" firstAttribute="top" secondItem="HED-4J-jp4" secondAttribute="bottom" constant="70" id="HbX-at-t83"/>
+                            <constraint firstItem="sYw-2P-epw" firstAttribute="leading" secondItem="jqp-oT-OFt" secondAttribute="leading" id="Hj6-2k-or3"/>
+                            <constraint firstItem="TAh-7U-xcb" firstAttribute="top" secondItem="HED-4J-jp4" secondAttribute="bottom" constant="13" id="IVd-6Q-swY"/>
+                            <constraint firstItem="sNb-Za-Ucq" firstAttribute="trailing" secondItem="e1N-0t-NO0" secondAttribute="trailing" id="OFe-OC-THX"/>
+                            <constraint firstItem="HED-4J-jp4" firstAttribute="top" secondItem="egp-q8-y5q" secondAttribute="bottom" constant="18" id="U0v-gh-DKO"/>
+                            <constraint firstItem="sNb-Za-Ucq" firstAttribute="bottom" secondItem="sYw-2P-epw" secondAttribute="bottom" id="aSh-7e-9cE"/>
+                            <constraint firstItem="FVG-4V-Ow1" firstAttribute="centerX" secondItem="jqp-oT-OFt" secondAttribute="centerX" id="bBU-Re-zza"/>
+                            <constraint firstItem="3TB-dC-9Hc" firstAttribute="centerX" secondItem="jqp-oT-OFt" secondAttribute="centerX" id="bGa-Ha-gkB"/>
+                            <constraint firstItem="HED-4J-jp4" firstAttribute="centerX" secondItem="jqp-oT-OFt" secondAttribute="centerX" id="d5d-PZ-L90"/>
+                            <constraint firstItem="TAh-7U-xcb" firstAttribute="leading" secondItem="Jmc-SV-45X" secondAttribute="trailing" constant="4.5" id="htN-Af-QzU"/>
+                            <constraint firstItem="e1N-0t-NO0" firstAttribute="top" secondItem="sNb-Za-Ucq" secondAttribute="top" id="kH5-dS-s88"/>
+                            <constraint firstItem="HED-4J-jp4" firstAttribute="centerY" secondItem="jqp-oT-OFt" secondAttribute="centerY" id="l1w-tM-JUV"/>
+                            <constraint firstItem="sNb-Za-Ucq" firstAttribute="bottom" secondItem="FVG-4V-Ow1" secondAttribute="bottom" constant="29" id="mj6-Sp-pM0"/>
+                            <constraint firstItem="sNb-Za-Ucq" firstAttribute="trailing" secondItem="sYw-2P-epw" secondAttribute="trailing" id="sfc-mb-uLW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sNb-Za-Ucq"/>
+                    </view>
+                    <connections>
+                        <outlet property="customNavigationHeaderView" destination="e1N-0t-NO0" id="JxR-BR-AKY"/>
+                        <outlet property="enterButton" destination="3TB-dC-9Hc" id="26t-WL-pT7"/>
+                        <outlet property="pluCodeInfoOutlet" destination="TAh-7U-xcb" id="WNb-qP-FTQ"/>
+                        <outlet property="pluTextField" destination="WJb-8n-fD7" id="w39-Sh-fqS"/>
+                        <outlet property="pluView" destination="Vhq-bw-8yT" id="RMT-cs-Kki"/>
+                        <outlet property="toolbar" destination="kR6-JA-fy6" id="sWa-ps-PKY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVR-Fk-LcS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kR6-JA-fy6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Close" id="Prt-Zr-Cbx" userLabel="Close">
+                            <color key="tintColor" name="AppRedColor"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="e1j-x1-rJG" id="59Q-y5-ba2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Dv2-Bm-Syk"/>
+                        <barButtonItem title="Done" id="9Bg-tU-cfQ" userLabel="Done">
+                            <color key="tintColor" name="AppRedColor"/>
+                            <connections>
+                                <action selector="donebUttonAction:" destination="e1j-x1-rJG" id="XQz-Wk-lFF"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="237.68115942028987" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fill1" width="88" height="88"/>
+        <image name="helpIcon" width="40" height="53"/>
+        <image name="iconIcBlkKeypad" width="58" height="48"/>
+        <image name="imageTomatoPlu" width="134" height="100"/>
+        <image name="information" width="19" height="19"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

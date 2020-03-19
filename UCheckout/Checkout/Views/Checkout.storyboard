@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Bold.otf">
+            <string>SanFranciscoText-Bold</string>
+        </array>
+        <array key="SanFranciscoText-Regular.otf">
+            <string>SanFranciscoText-Regular</string>
+        </array>
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Checkout Camcel View Controller-->
+        <scene sceneID="uvc-yc-QcW">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutCamcelViewController" id="Eka-ez-Mpn" customClass="CheckoutCamcelViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sO-IQ-9vE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelImage" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-sz-uwS">
+                                <rect key="frame" x="157" y="71" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bqb-Xd-b58"/>
+                                    <constraint firstAttribute="width" constant="100" id="z7K-dN-Qbc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUz-iA-bXb">
+                                <rect key="frame" x="366" y="60" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Cg2-dF-eGs"/>
+                                    <constraint firstAttribute="width" constant="32" id="Pzd-gj-cgr"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="Eka-ez-Mpn" eventType="touchUpInside" id="vbz-PJ-nyf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to cancel the order ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-j4-GdV">
+                                <rect key="frame" x="30" y="184" width="354" height="53"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your card will not be charged and your cart will be cleared." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-JT-fXt">
+                                <rect key="frame" x="30" y="250" width="368" height="36"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-7S-INZ">
+                                <rect key="frame" x="10" y="798" width="394" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PL4-55-tcg">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                        <state key="normal" title="Pay at Lane">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payAtLaneButtonAction:" destination="Eka-ez-Mpn" eventType="touchUpInside" id="7bP-2L-cQD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woj-z8-E0R">
+                                        <rect key="frame" x="0.0" y="30" width="394" height="20"/>
+                                        <color key="backgroundColor" name="AppRedColor"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonAction:" destination="Eka-ez-Mpn" eventType="touchUpInside" id="DIF-aE-5ki"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LVq-Y0-FQj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bXW-sz-uwS" firstAttribute="centerX" secondItem="3sO-IQ-9vE" secondAttribute="centerX" id="1C6-7o-jLr"/>
+                            <constraint firstItem="bXW-sz-uwS" firstAttribute="top" secondItem="T0E-Ed-Ues" secondAttribute="top" constant="27" id="1Ge-An-su3"/>
+                            <constraint firstItem="TUz-iA-bXb" firstAttribute="top" secondItem="T0E-Ed-Ues" secondAttribute="top" constant="16" id="1rs-VM-e1H"/>
+                            <constraint firstItem="vjB-j4-GdV" firstAttribute="top" secondItem="bXW-sz-uwS" secondAttribute="bottom" constant="13" id="2um-57-bp5"/>
+                            <constraint firstAttribute="trailing" secondItem="zfj-JT-fXt" secondAttribute="trailing" constant="16" id="AaO-fb-5JM"/>
+                            <constraint firstItem="T0E-Ed-Ues" firstAttribute="trailing" secondItem="TUz-iA-bXb" secondAttribute="trailing" constant="16" id="Lm4-B8-m6v"/>
+                            <constraint firstAttribute="trailing" secondItem="vjB-j4-GdV" secondAttribute="trailing" constant="30" id="Lr1-jK-FdN"/>
+                            <constraint firstItem="vjB-j4-GdV" firstAttribute="leading" secondItem="T0E-Ed-Ues" secondAttribute="leading" constant="30" id="Obd-Xr-qNI"/>
+                            <constraint firstItem="zfj-JT-fXt" firstAttribute="leading" secondItem="T0E-Ed-Ues" secondAttribute="leading" constant="30" id="UJe-5C-anq"/>
+                            <constraint firstItem="Atf-7S-INZ" firstAttribute="leading" secondItem="T0E-Ed-Ues" secondAttribute="leading" constant="10" id="Yuj-zl-tUC"/>
+                            <constraint firstItem="T0E-Ed-Ues" firstAttribute="bottom" secondItem="Atf-7S-INZ" secondAttribute="bottom" constant="14" id="ZGt-uN-d8a"/>
+                            <constraint firstItem="T0E-Ed-Ues" firstAttribute="trailing" secondItem="Atf-7S-INZ" secondAttribute="trailing" constant="10" id="mbS-ZB-GnV"/>
+                            <constraint firstItem="zfj-JT-fXt" firstAttribute="top" secondItem="vjB-j4-GdV" secondAttribute="bottom" constant="13" id="qls-lp-ztM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T0E-Ed-Ues"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Woj-z8-E0R" id="o0W-H4-bfq"/>
+                        <outlet property="descriptionLabel" destination="zfj-JT-fXt" id="ziS-Kw-sak"/>
+                        <outlet property="headerLabel" destination="vjB-j4-GdV" id="3HW-ZJ-45c"/>
+                        <outlet property="payAtLaneButton" destination="PL4-55-tcg" id="4LR-WH-7X1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUN-t1-spq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="78.348214285714278"/>
+        </scene>
+        <!--Pay At Lane View Controller-->
+        <scene sceneID="Exq-f3-XtU">
+            <objects>
+                <viewController storyboardIdentifier="PayAtLaneViewController" id="dv5-fh-yGm" customClass="PayAtLaneViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o1P-B1-Yk5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZfR-HG-tj0">
+                                <rect key="frame" x="157" y="71" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SQP-lp-nNy"/>
+                                    <constraint firstAttribute="height" constant="100" id="V3J-TT-V5d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take this code to a regular checkout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-wk-ECG">
+                                <rect key="frame" x="30" y="184" width="354" height="53"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZB-RI-qjb">
+                                <rect key="frame" x="16" y="250" width="382" height="54"/>
+                                <string key="text">Please go to a regular checkout lane and present this code to the attendant. Leaving this screen will clear your cart and void this code.</string>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQA-Om-hwF">
+                                <rect key="frame" x="0.0" y="592" width="414" height="270"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axW-AZ-inf">
+                                        <rect key="frame" x="0.0" y="68" width="414" height="103"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcode-of-square-shape" translatesAutoresizingMaskIntoConstraints="NO" id="30J-5g-2s6">
+                                                <rect key="frame" x="14" y="11" width="386" height="69"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012345678901234567890123" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nd-7a-VOT">
+                                                <rect key="frame" x="17" y="80" width="380" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="El9-s7-MLm"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ISj-2T-les"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="103" id="Iwr-O7-UFa"/>
+                                            <constraint firstAttribute="trailing" secondItem="30J-5g-2s6" secondAttribute="trailing" constant="14" id="S8u-a4-MXs"/>
+                                            <constraint firstItem="30J-5g-2s6" firstAttribute="top" secondItem="axW-AZ-inf" secondAttribute="top" constant="11" id="VAs-FS-Jzz"/>
+                                            <constraint firstAttribute="trailing" secondItem="3nd-7a-VOT" secondAttribute="trailing" constant="17" id="Yx9-rg-Am3"/>
+                                            <constraint firstAttribute="bottom" secondItem="3nd-7a-VOT" secondAttribute="bottom" constant="2" id="fQJ-pc-ws8"/>
+                                            <constraint firstItem="3nd-7a-VOT" firstAttribute="top" secondItem="30J-5g-2s6" secondAttribute="bottom" id="hMm-Mk-Hgb"/>
+                                            <constraint firstItem="3nd-7a-VOT" firstAttribute="leading" secondItem="axW-AZ-inf" secondAttribute="leading" constant="17" id="lY9-HK-4U9"/>
+                                            <constraint firstItem="30J-5g-2s6" firstAttribute="leading" secondItem="axW-AZ-inf" secondAttribute="leading" constant="14" id="ovS-vr-bdF"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOB-yY-zlc">
+                                        <rect key="frame" x="10" y="211" width="394" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="hkY-Et-38J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                        <state key="normal" title="Cancel Order">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelOrderButtonAction:" destination="dv5-fh-yGm" eventType="touchUpInside" id="fPZ-3L-TPg"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qba-dG-tED">
+                                        <rect key="frame" x="107" y="28" width="200" height="32"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogoJ4U" translatesAutoresizingMaskIntoConstraints="NO" id="fRc-b0-6EZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="LPw-UQ-tgz"/>
+                                                    <constraint firstAttribute="width" constant="32" id="nBe-p9-WuH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="checkout code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp8-XJ-VE5">
+                                                <rect key="frame" x="40" y="0.0" width="160" height="32"/>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fRc-b0-6EZ" firstAttribute="leading" secondItem="Qba-dG-tED" secondAttribute="leading" id="0vg-dN-DOu"/>
+                                            <constraint firstItem="sp8-XJ-VE5" firstAttribute="top" secondItem="Qba-dG-tED" secondAttribute="top" id="CZo-EZ-7HS"/>
+                                            <constraint firstItem="fRc-b0-6EZ" firstAttribute="centerY" secondItem="Qba-dG-tED" secondAttribute="centerY" id="Eo9-Bh-vcI"/>
+                                            <constraint firstAttribute="trailing" secondItem="sp8-XJ-VE5" secondAttribute="trailing" id="PfM-VZ-qOw"/>
+                                            <constraint firstAttribute="width" constant="200" id="UgE-cn-nZb"/>
+                                            <constraint firstAttribute="bottom" secondItem="sp8-XJ-VE5" secondAttribute="bottom" id="VqY-y5-6dD"/>
+                                            <constraint firstItem="sp8-XJ-VE5" firstAttribute="leading" secondItem="fRc-b0-6EZ" secondAttribute="trailing" constant="8" id="gLg-2u-l2g"/>
+                                            <constraint firstAttribute="height" constant="32" id="o9s-Od-hrC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.48627450980392156" green="0.80784313725490198" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cOB-yY-zlc" secondAttribute="trailing" constant="10" id="1mT-dt-h1u"/>
+                                    <constraint firstItem="axW-AZ-inf" firstAttribute="leading" secondItem="pQA-Om-hwF" secondAttribute="leading" id="4N3-L7-YU8"/>
+                                    <constraint firstItem="cOB-yY-zlc" firstAttribute="top" secondItem="axW-AZ-inf" secondAttribute="bottom" constant="40" id="5du-VU-HGW"/>
+                                    <constraint firstItem="axW-AZ-inf" firstAttribute="top" secondItem="Qba-dG-tED" secondAttribute="bottom" constant="8" id="LOc-ro-Txs"/>
+                                    <constraint firstAttribute="bottom" secondItem="cOB-yY-zlc" secondAttribute="bottom" constant="14" id="NUi-qb-WXN"/>
+                                    <constraint firstItem="cOB-yY-zlc" firstAttribute="leading" secondItem="pQA-Om-hwF" secondAttribute="leading" constant="10" id="VZB-Xr-tOg"/>
+                                    <constraint firstAttribute="trailing" secondItem="axW-AZ-inf" secondAttribute="trailing" id="b0m-y6-mut"/>
+                                    <constraint firstAttribute="height" constant="270" id="gRU-dm-XlN"/>
+                                    <constraint firstItem="Qba-dG-tED" firstAttribute="centerX" secondItem="pQA-Om-hwF" secondAttribute="centerX" id="ieH-gh-rnv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pQA-Om-hwF" secondAttribute="trailing" id="CCM-rx-KmW"/>
+                            <constraint firstItem="4t0-Ef-pGq" firstAttribute="bottom" secondItem="pQA-Om-hwF" secondAttribute="bottom" id="CPH-gg-0Xt"/>
+                            <constraint firstAttribute="trailing" secondItem="9ZB-RI-qjb" secondAttribute="trailing" constant="16" id="HhY-cO-veX"/>
+                            <constraint firstItem="9ZB-RI-qjb" firstAttribute="top" secondItem="FI2-wk-ECG" secondAttribute="bottom" constant="13" id="RN1-ZB-Ffx"/>
+                            <constraint firstItem="9ZB-RI-qjb" firstAttribute="leading" secondItem="4t0-Ef-pGq" secondAttribute="leading" constant="16" id="RYb-iq-s0s"/>
+                            <constraint firstItem="ZfR-HG-tj0" firstAttribute="centerX" secondItem="o1P-B1-Yk5" secondAttribute="centerX" id="dZD-rK-aUI"/>
+                            <constraint firstItem="pQA-Om-hwF" firstAttribute="leading" secondItem="o1P-B1-Yk5" secondAttribute="leading" id="e2n-Ic-GFy"/>
+                            <constraint firstItem="ZfR-HG-tj0" firstAttribute="top" secondItem="4t0-Ef-pGq" secondAttribute="top" constant="27" id="r12-1B-IOe"/>
+                            <constraint firstItem="FI2-wk-ECG" firstAttribute="leading" secondItem="4t0-Ef-pGq" secondAttribute="leading" constant="30" id="u4o-ER-clD"/>
+                            <constraint firstItem="FI2-wk-ECG" firstAttribute="top" secondItem="ZfR-HG-tj0" secondAttribute="bottom" constant="13" id="uBd-cv-NgL"/>
+                            <constraint firstAttribute="trailing" secondItem="FI2-wk-ECG" secondAttribute="trailing" constant="30" id="zMv-1F-Kbn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4t0-Ef-pGq"/>
+                    </view>
+                    <connections>
+                        <outlet property="barCodeImageView" destination="30J-5g-2s6" id="T6g-Yr-11U"/>
+                        <outlet property="barCodeLabel" destination="3nd-7a-VOT" id="lNb-ZQ-EZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IMt-Qx-hRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597" y="78"/>
+        </scene>
+        <!--Checkout Cancel Done View Controller-->
+        <scene sceneID="GZb-3r-IVK">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutCancelDoneViewController" id="X6y-cT-h70" customClass="CheckoutCancelDoneViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EcD-39-e6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancelImage" translatesAutoresizingMaskIntoConstraints="NO" id="WcG-GY-2dw">
+                                <rect key="frame" x="157" y="71" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Hph-kE-ACg"/>
+                                    <constraint firstAttribute="width" constant="100" id="gg5-He-83H"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order has been cancelled." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0AT-z6-1xO">
+                                <rect key="frame" x="30" y="184" width="354" height="26.5"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoText-Bold" family="San Francisco Text" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PHx-Xq-4Zg">
+                                <rect key="frame" x="10" y="798" width="394" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFT-jW-1L6">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="17"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeButtonAction:" destination="X6y-cT-h70" eventType="touchUpInside" id="Mho-wO-edb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lde-z9-tUD"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WcG-GY-2dw" firstAttribute="centerX" secondItem="EcD-39-e6F" secondAttribute="centerX" id="3rf-FL-pE2"/>
+                            <constraint firstItem="Rue-df-u2X" firstAttribute="bottom" secondItem="PHx-Xq-4Zg" secondAttribute="bottom" constant="14" id="CjB-EE-sEJ"/>
+                            <constraint firstItem="0AT-z6-1xO" firstAttribute="leading" secondItem="Rue-df-u2X" secondAttribute="leading" constant="30" id="VgA-jV-AIF"/>
+                            <constraint firstItem="0AT-z6-1xO" firstAttribute="top" secondItem="WcG-GY-2dw" secondAttribute="bottom" constant="13" id="gHr-oa-km3"/>
+                            <constraint firstAttribute="trailing" secondItem="0AT-z6-1xO" secondAttribute="trailing" constant="30" id="iYo-Nz-6S5"/>
+                            <constraint firstItem="WcG-GY-2dw" firstAttribute="top" secondItem="Rue-df-u2X" secondAttribute="top" constant="27" id="jRl-HN-nzM"/>
+                            <constraint firstItem="PHx-Xq-4Zg" firstAttribute="leading" secondItem="Rue-df-u2X" secondAttribute="leading" constant="10" id="lMv-Ui-CJf"/>
+                            <constraint firstItem="Rue-df-u2X" firstAttribute="trailing" secondItem="PHx-Xq-4Zg" secondAttribute="trailing" constant="10" id="rmE-69-8Bg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rue-df-u2X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64g-mt-Nhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="barcode-of-square-shape" width="256" height="256"/>
+        <image name="cancelImage" width="100" height="100"/>
+        <image name="close" width="14" height="15"/>
+        <image name="icLogoJ4U" width="27" height="27"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.10196078431372549" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

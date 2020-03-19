@@ -1,0 +1,34 @@
+{
+  "name": "ABCoreUI",
+  "version": "1.1.1",
+  "summary": "A short description of ABCoreUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jgasc12/ABCoreUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jgasc12": "40179793+jgasc12@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/jgasc12/ABCoreUI.git",
+    "tag": "1.1.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "4.2",
+  "source_files": "ABCoreUI/Classes/**/*",
+  "resource_bundles": {
+    "ABUIKit": [
+      "ABCoreUI/Assets/*.{png,pdf}"
+    ]
+  },
+  "dependencies": {
+    "SnapKit": [
+      "~> 4.2.0"
+    ]
+  },
+  "swift_version": "4.2"
+}

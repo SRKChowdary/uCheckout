@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--General Help-->
+        <scene sceneID="nNg-oi-7kz">
+            <objects>
+                <viewController storyboardIdentifier="GeneralHelpViewController" id="cmH-QS-tt5" customClass="GeneralHelpViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="htB-ip-QmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageWalletEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="5V8-yb-Ydq">
+                                <rect key="frame" x="147.5" y="140" width="80" height="80"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rpQ-we-xxH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Help Coming Soon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-lv-TRd">
+                                <rect key="frame" x="13" y="257" width="350" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="HN7-cd-vO5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are working hard to create a comprehensive help section. For now, if you need help, please find an associate. Thank you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXL-sI-xYd">
+                                <rect key="frame" x="20" y="364" width="335" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M1Q-HV-XiZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qjX-YU-XlK" firstAttribute="trailing" secondItem="OXL-sI-xYd" secondAttribute="trailing" constant="20" id="3al-yE-70Z"/>
+                            <constraint firstItem="OXL-sI-xYd" firstAttribute="leading" secondItem="qjX-YU-XlK" secondAttribute="leading" constant="20" id="CKs-4a-Ynp"/>
+                            <constraint firstItem="d1t-lv-TRd" firstAttribute="leading" secondItem="qjX-YU-XlK" secondAttribute="leading" constant="13" id="Fcv-Qu-Fid"/>
+                            <constraint firstItem="d1t-lv-TRd" firstAttribute="top" secondItem="5V8-yb-Ydq" secondAttribute="bottom" constant="37" id="NcL-R3-hL2"/>
+                            <constraint firstItem="qjX-YU-XlK" firstAttribute="trailing" secondItem="d1t-lv-TRd" secondAttribute="trailing" constant="12" id="kPc-Xq-nJh"/>
+                            <constraint firstItem="OXL-sI-xYd" firstAttribute="top" secondItem="d1t-lv-TRd" secondAttribute="bottom" constant="81" id="mfx-jb-cUC"/>
+                            <constraint firstItem="5V8-yb-Ydq" firstAttribute="centerX" secondItem="htB-ip-QmH" secondAttribute="centerX" id="p9M-cr-KjU"/>
+                            <constraint firstItem="5V8-yb-Ydq" firstAttribute="top" secondItem="qjX-YU-XlK" secondAttribute="top" constant="76" id="rDO-XB-T1W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qjX-YU-XlK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="General Help" id="Xba-5s-D7T">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menuIcon" id="FOD-8h-ONW">
+                            <connections>
+                                <action selector="menuButtonAction:" destination="cmH-QS-tt5" id="ehK-jY-Ltg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButtonOutlet" destination="FOD-8h-ONW" id="YHQ-iz-awo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7x-Tt-Lxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="171.36431784107947"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sat-V7-4z6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rwS-fr-AoH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FX7-yE-sX2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AppRedColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cmH-QS-tt5" kind="relationship" relationship="rootViewController" id="5ja-QQ-KTq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGG-jh-gks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="171.36431784107947"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageWalletEmpty" width="80" height="80"/>
+        <image name="menuIcon" width="25" height="25"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module ABCoreUI {
+  umbrella header "ABCoreUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

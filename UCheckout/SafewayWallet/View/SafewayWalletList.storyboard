@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safeway Wallet-->
+        <scene sceneID="Vzc-HP-PaW">
+            <objects>
+                <viewController storyboardIdentifier="SafewayWalletListViewController" id="TvW-Ct-eIO" customClass="SafewayWalletListViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="er0-1j-hNB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="GBF-lX-07n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="320"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="Da5-5I-U67"/>
+                                </constraints>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TvW-Ct-eIO" id="Sa2-6V-srM"/>
+                                    <outlet property="delegate" destination="TvW-Ct-eIO" id="xlt-C4-CEc"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o23-08-sC0">
+                                <rect key="frame" x="0.0" y="423" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageErrorFlow" translatesAutoresizingMaskIntoConstraints="NO" id="jEH-rj-Odz">
+                                        <rect key="frame" x="17" y="35" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AW7-xd-ZzL"/>
+                                            <constraint firstAttribute="width" constant="30" id="h5y-pP-N89"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can’t add any more cards. Max limit reached in wallet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZk-6B-U0U">
+                                        <rect key="frame" x="58" y="29.5" width="309" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81491583585739136" green="0.20127129554748535" blue="0.18032157421112061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BZk-6B-U0U" secondAttribute="trailing" constant="8" id="Bev-oR-dMm"/>
+                                    <constraint firstItem="jEH-rj-Odz" firstAttribute="centerY" secondItem="o23-08-sC0" secondAttribute="centerY" id="CDk-HF-x99"/>
+                                    <constraint firstItem="jEH-rj-Odz" firstAttribute="leading" secondItem="o23-08-sC0" secondAttribute="leading" constant="17" id="QpF-GE-MrQ"/>
+                                    <constraint firstAttribute="height" constant="100" id="UpS-My-9yu"/>
+                                    <constraint firstItem="BZk-6B-U0U" firstAttribute="centerY" secondItem="o23-08-sC0" secondAttribute="centerY" id="ee6-jr-Zmb"/>
+                                    <constraint firstItem="BZk-6B-U0U" firstAttribute="leading" secondItem="jEH-rj-Odz" secondAttribute="trailing" constant="11" id="lUx-rH-VM7"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXr-oK-sRr" userLabel="EmptyWalletView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="324"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageWalletEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-2j-lpE">
+                                        <rect key="frame" x="147.5" y="76" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="885-OW-YQr"/>
+                                            <constraint firstAttribute="height" constant="80" id="TFZ-UG-geY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-Vp-DPi">
+                                        <rect key="frame" x="76" y="193" width="223" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="iwR-nZ-77R"/>
+                                            <constraint firstAttribute="width" constant="223" id="wHn-Cr-xEz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have not set any payment methods at this time. You will need to set one prior to being able to checkout." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIm-7h-C2u">
+                                        <rect key="frame" x="20" y="246" width="335" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XIm-7h-C2u" secondAttribute="trailing" constant="20" id="5Z2-Nj-1WV"/>
+                                    <constraint firstItem="XIm-7h-C2u" firstAttribute="leading" secondItem="uXr-oK-sRr" secondAttribute="leading" constant="20" id="8z9-B7-TnA"/>
+                                    <constraint firstItem="XIm-7h-C2u" firstAttribute="top" secondItem="aIj-Vp-DPi" secondAttribute="bottom" constant="15" id="RwZ-Xt-fhz"/>
+                                    <constraint firstItem="gnn-2j-lpE" firstAttribute="centerX" secondItem="uXr-oK-sRr" secondAttribute="centerX" id="YcX-VT-ygU"/>
+                                    <constraint firstItem="gnn-2j-lpE" firstAttribute="top" secondItem="uXr-oK-sRr" secondAttribute="top" constant="76" id="g1m-kR-OCn"/>
+                                    <constraint firstItem="aIj-Vp-DPi" firstAttribute="top" secondItem="gnn-2j-lpE" secondAttribute="bottom" constant="37" id="g7J-GV-EVi"/>
+                                    <constraint firstAttribute="height" constant="324" id="hx5-Ns-MiQ"/>
+                                    <constraint firstItem="aIj-Vp-DPi" firstAttribute="centerX" secondItem="uXr-oK-sRr" secondAttribute="centerX" id="lFp-bU-8gn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8o-9l-8hR">
+                                <rect key="frame" x="10" y="609" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fsz-r7-Q32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Add New Credit Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTappedAddNewCreditCard:" destination="TvW-Ct-eIO" eventType="touchUpInside" id="TeB-qj-e38"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" id="0Li-8n-cdN"/>
+                            <constraint firstItem="uXr-oK-sRr" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" id="AVw-79-Uhf"/>
+                            <constraint firstItem="o23-08-sC0" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" id="HUU-QR-Dr9"/>
+                            <constraint firstItem="MvZ-Da-vCl" firstAttribute="bottom" secondItem="v8o-9l-8hR" secondAttribute="bottom" constant="14" id="N7l-Wd-h8F"/>
+                            <constraint firstItem="MvZ-Da-vCl" firstAttribute="trailing" secondItem="v8o-9l-8hR" secondAttribute="trailing" constant="10" id="Pgw-wN-Cjq"/>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="trailing" secondItem="MvZ-Da-vCl" secondAttribute="trailing" id="XGB-3c-JoD"/>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="top" secondItem="MvZ-Da-vCl" secondAttribute="top" id="gDo-hb-SEU"/>
+                            <constraint firstItem="v8o-9l-8hR" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" constant="10" id="gne-cs-o3o"/>
+                            <constraint firstItem="uXr-oK-sRr" firstAttribute="trailing" secondItem="MvZ-Da-vCl" secondAttribute="trailing" id="p4S-Fv-mhg"/>
+                            <constraint firstItem="o23-08-sC0" firstAttribute="top" secondItem="GBF-lX-07n" secondAttribute="bottom" constant="39" id="qpM-4T-c3e"/>
+                            <constraint firstItem="MvZ-Da-vCl" firstAttribute="trailing" secondItem="o23-08-sC0" secondAttribute="trailing" id="ugS-G0-RJO"/>
+                            <constraint firstItem="uXr-oK-sRr" firstAttribute="top" secondItem="MvZ-Da-vCl" secondAttribute="top" id="vxK-Mp-BY7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MvZ-Da-vCl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safeway Wallet" id="3lB-ei-ZS8">
+                        <barButtonItem key="leftBarButtonItem" image="backArrow" id="Zb7-ug-wOl">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonDidTapped:" destination="TvW-Ct-eIO" id="RrA-Fj-0Rx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menuIcon" id="d2X-Mb-JlK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="menuButtonAction:" destination="TvW-Ct-eIO" id="GF3-ab-ygd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addCardButton" destination="v8o-9l-8hR" id="L5l-tm-LWb"/>
+                        <outlet property="empyWalletMessageView" destination="uXr-oK-sRr" id="POZ-h9-Kho"/>
+                        <outlet property="errorMessageLabel" destination="BZk-6B-U0U" id="1dF-eA-nRe"/>
+                        <outlet property="errorView" destination="o23-08-sC0" id="LEH-F5-f2f"/>
+                        <outlet property="menuButtonOutlet" destination="d2X-Mb-JlK" id="jxq-Eg-WWf"/>
+                        <outlet property="tableView" destination="GBF-lX-07n" id="LTv-z8-r4p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzA-pL-LwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ei3-yV-0Co">
+            <objects>
+                <navigationController storyboardIdentifier="SafewayWalletListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovQ-Ig-zxH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l2X-0r-568">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AppRedColor"/>
+                        <color key="barTintColor" name="AppRedColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TvW-Ct-eIO" kind="relationship" relationship="rootViewController" id="pRH-o2-eob"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBF-kj-IIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="-133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backArrow" width="25" height="25"/>
+        <image name="imageErrorFlow" width="30" height="30"/>
+        <image name="imageWalletEmpty" width="80" height="80"/>
+        <image name="menuIcon" width="25" height="25"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

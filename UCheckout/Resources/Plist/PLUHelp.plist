@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pluData</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>PLUHelpImage1</string>
+			<key>message</key>
+			<string>Items that are unable to be scanned should be keyed in using the PLU code.</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>PLUHelpImage2</string>
+			<key>message</key>
+			<string>A PLU Code is a 4 or 5 digit number located on the item sticker or on the shelf tag.</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>PLUHelpImage3</string>
+			<key>message</key>
+			<string>If an item needs to be weighed, take the item to the digital scale located in the produce section.</string>
+		</dict>
+	</array>
+</dict>
+</plist>

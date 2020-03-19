@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>scanData</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>ScanHelpImage1</string>
+			<key>message</key>
+			<string>Find barcodes located on packaged items or on the stickers on produce.</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>ScanHelpImage2</string>
+			<key>message</key>
+			<string>Position barcode in frame to scan. Sometimes, the camera needs to be moved farther back to do this.</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>ScanHelpImage3</string>
+			<key>message</key>
+			<string>Use the guide above for accepted types.</string>
+		</dict>
+	</array>
+</dict>
+</plist>

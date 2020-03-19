@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Medium.otf">
+            <string>SanFranciscoText-Medium</string>
+        </array>
+        <array key="SanFranciscoText-Semibold.otf">
+            <string>SanFranciscoText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecieptDonePopUpViewController" customModule="UCheckout" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVk-7O-EDd">
+                    <rect key="frame" x="18" y="60" width="378" height="742"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kI-tE-pwD">
+                            <rect key="frame" x="0.0" y="0.0" width="378" height="742"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI6-QK-gXy">
+                                    <rect key="frame" x="330" y="8" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="QER-i0-P9a"/>
+                                        <constraint firstAttribute="height" constant="40" id="iIk-ei-ET0"/>
+                                    </constraints>
+                                    <state key="normal" image="close"/>
+                                    <connections>
+                                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="xOK-ng-FuE"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait! Did you show your receipt at Self Checkout?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmA-QN-GLu">
+                                    <rect key="frame" x="20" y="228" width="338" height="120"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="UMV-2K-NmV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Medium" family="San Francisco Text" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThankYou" translatesAutoresizingMaskIntoConstraints="NO" id="h7B-LC-wxD">
+                                    <rect key="frame" x="79" y="35" width="220" height="220"/>
+                                    <accessibility key="accessibilityConfiguration" label="Thank you for shopping at Safeway">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="220" id="bWI-Yb-UUS"/>
+                                        <constraint firstAttribute="height" constant="220" id="ef8-hy-X2D"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLZ-Dd-LRD">
+                                    <rect key="frame" x="114" y="338" width="150" height="50"/>
+                                    <color key="backgroundColor" name="AppRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="BKF-Xk-Pf4"/>
+                                        <constraint firstAttribute="width" constant="150" id="Ix1-CO-HC4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SanFranciscoText-Semibold" family="San Francisco Text" pointSize="15"/>
+                                    <state key="normal" title="YES">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="yesButtonAction:" destination="-1" eventType="touchUpInside" id="Zef-Pr-xxW"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="UmA-QN-GLu" firstAttribute="leading" secondItem="4kI-tE-pwD" secondAttribute="leading" constant="20" id="Daf-yz-SDy"/>
+                                <constraint firstItem="h7B-LC-wxD" firstAttribute="centerX" secondItem="4kI-tE-pwD" secondAttribute="centerX" id="Is8-ht-2qR"/>
+                                <constraint firstItem="h7B-LC-wxD" firstAttribute="top" secondItem="4kI-tE-pwD" secondAttribute="top" constant="35" id="P9T-V2-XQ1"/>
+                                <constraint firstItem="yLZ-Dd-LRD" firstAttribute="top" secondItem="UmA-QN-GLu" secondAttribute="bottom" constant="-10" id="TJ0-fB-wwU"/>
+                                <constraint firstItem="UmA-QN-GLu" firstAttribute="top" secondItem="h7B-LC-wxD" secondAttribute="bottom" constant="-27" id="kDz-nd-Jjb"/>
+                                <constraint firstAttribute="trailing" secondItem="jI6-QK-gXy" secondAttribute="trailing" constant="8" id="mcY-PP-jJy"/>
+                                <constraint firstItem="jI6-QK-gXy" firstAttribute="top" secondItem="4kI-tE-pwD" secondAttribute="top" constant="8" id="sOo-6V-SyZ"/>
+                                <constraint firstItem="yLZ-Dd-LRD" firstAttribute="centerX" secondItem="4kI-tE-pwD" secondAttribute="centerX" id="wBr-Sv-1jJ"/>
+                                <constraint firstAttribute="trailing" secondItem="UmA-QN-GLu" secondAttribute="trailing" constant="20" id="zvp-5f-ehg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4kI-tE-pwD" firstAttribute="centerY" secondItem="BVk-7O-EDd" secondAttribute="centerY" id="JRx-JJ-lB3"/>
+                        <constraint firstItem="4kI-tE-pwD" firstAttribute="leading" secondItem="BVk-7O-EDd" secondAttribute="leading" id="TMV-bI-p8i"/>
+                        <constraint firstItem="4kI-tE-pwD" firstAttribute="top" secondItem="BVk-7O-EDd" secondAttribute="top" id="hzG-Fj-EKs"/>
+                        <constraint firstItem="4kI-tE-pwD" firstAttribute="centerX" secondItem="BVk-7O-EDd" secondAttribute="centerX" id="iif-Ur-tqA"/>
+                        <constraint firstAttribute="trailing" secondItem="4kI-tE-pwD" secondAttribute="trailing" id="qiV-do-qOQ"/>
+                        <constraint firstAttribute="bottom" secondItem="4kI-tE-pwD" secondAttribute="bottom" id="y7e-Bp-cO9"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BVk-7O-EDd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="Eb7-Ph-0Oi"/>
+                <constraint firstItem="BVk-7O-EDd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="gwI-us-fca"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BVk-7O-EDd" secondAttribute="trailing" constant="18" id="kTw-Xq-wJ6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BVk-7O-EDd" secondAttribute="bottom" constant="60" id="tDr-mi-aAx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ThankYou" width="270" height="242"/>
+        <image name="close" width="14" height="15"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

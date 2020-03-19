@@ -1,0 +1,22 @@
+{
+  "name": "ABCoreComponent",
+  "version": "0.1.0",
+  "summary": "A short description of ABCoreComponent.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/gredd03/ABCoreComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gredd03": "gredd03@safeway.com"
+  },
+  "source": {
+    "git": "https://github.com/gredd03/ABCoreComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ABCoreComponent/Classes/**/*"
+}

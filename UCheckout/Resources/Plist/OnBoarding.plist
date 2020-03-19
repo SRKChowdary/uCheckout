@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>onBoardingData</key>
+	<array>
+		<dict>
+			<key>imageName</key>
+			<string>imageOnboard1</string>
+			<key>message</key>
+			<string> Scan barcode printed on item using your phone</string>
+			<key>header</key>
+			<string>Scan</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>imageOnboard2</string>
+			<key>message</key>
+			<string>Add scanned item to your bag and continue shopping</string>
+			<key>header</key>
+			<string>Shop</string>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>imageOnboard3</string>
+			<key>message</key>
+			<string>Pay with your phone, get a receipt using app, and you are all set to go</string>
+			<key>header</key>
+			<string>Go</string>
+		</dict>
+	</array>
+</dict>
+</plist>

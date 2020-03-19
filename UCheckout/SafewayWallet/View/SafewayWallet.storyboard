@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safeway Wallet-->
+        <scene sceneID="Vzc-HP-PaW">
+            <objects>
+                <viewController storyboardIdentifier="SafewayWalletListViewController" id="TvW-Ct-eIO" customClass="SafewayWalletListViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="er0-1j-hNB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GBF-lX-07n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8o-9l-8hR">
+                                <rect key="frame" x="10" y="609" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fsz-r7-Q32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Add New Credit Card">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" id="0Li-8n-cdN"/>
+                            <constraint firstItem="v8o-9l-8hR" firstAttribute="top" secondItem="GBF-lX-07n" secondAttribute="bottom" constant="14" id="JOr-bG-rPw"/>
+                            <constraint firstItem="MvZ-Da-vCl" firstAttribute="bottom" secondItem="v8o-9l-8hR" secondAttribute="bottom" constant="14" id="N7l-Wd-h8F"/>
+                            <constraint firstItem="MvZ-Da-vCl" firstAttribute="trailing" secondItem="v8o-9l-8hR" secondAttribute="trailing" constant="10" id="Pgw-wN-Cjq"/>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="trailing" secondItem="MvZ-Da-vCl" secondAttribute="trailing" id="XGB-3c-JoD"/>
+                            <constraint firstItem="GBF-lX-07n" firstAttribute="top" secondItem="MvZ-Da-vCl" secondAttribute="top" id="gDo-hb-SEU"/>
+                            <constraint firstItem="v8o-9l-8hR" firstAttribute="leading" secondItem="MvZ-Da-vCl" secondAttribute="leading" constant="10" id="gne-cs-o3o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MvZ-Da-vCl"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safeway Wallet" id="3lB-ei-ZS8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzA-pL-LwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ei3-yV-0Co">
+            <objects>
+                <navigationController storyboardIdentifier="SafewayWalletListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="ovQ-Ig-zxH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l2X-0r-568">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.81883352994918823" green="0.20128291845321655" blue="0.18032079935073853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TvW-Ct-eIO" kind="relationship" relationship="rootViewController" id="pRH-o2-eob"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBF-kj-IIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="-133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

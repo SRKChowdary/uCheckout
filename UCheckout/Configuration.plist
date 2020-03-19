@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Development</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://retail-api.azure-api.net/scanandgodev</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>f0760b3c35e546a399432d091658c484</string>
+	</dict>
+	<key>QA</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://retail-api.azure-api.net/scanandgoqa</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>f0760b3c35e546a399432d091658c484</string>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://retail-api.azure-api.net/scanandgoprod</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>f0760b3c35e546a399432d091658c484</string>
+	</dict>
+</dict>
+</plist>

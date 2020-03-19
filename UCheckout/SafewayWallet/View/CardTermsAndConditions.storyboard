@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Terms And Conditions View Controller-->
+        <scene sceneID="s9a-wI-OzV">
+            <objects>
+                <viewController storyboardIdentifier="CardTermsAndConditionsViewController" id="MG0-HT-hYD" customClass="CardTermsAndConditionsViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wd7-fV-9RS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ugi-F5-n7U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr8-eb-tsi">
+                                        <rect key="frame" x="100.5" y="20" width="174" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uay-wd-aIA">
+                                        <rect key="frame" x="341" y="21.5" width="17" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="17" id="BdT-90-QRk"/>
+                                            <constraint firstAttribute="height" constant="17" id="eHN-Z7-IJz"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="closeButtonDidTapped:" destination="MG0-HT-hYD" eventType="touchUpInside" id="JCt-9V-ZeR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rr8-eb-tsi" firstAttribute="centerX" secondItem="ugi-F5-n7U" secondAttribute="centerX" id="DlJ-Xa-LMn"/>
+                                    <constraint firstAttribute="height" constant="60" id="Hpg-QL-Mz3"/>
+                                    <constraint firstItem="uay-wd-aIA" firstAttribute="centerY" secondItem="ugi-F5-n7U" secondAttribute="centerY" id="O8M-gt-pus"/>
+                                    <constraint firstAttribute="trailing" secondItem="uay-wd-aIA" secondAttribute="trailing" constant="17" id="bfv-hy-D41"/>
+                                    <constraint firstItem="Rr8-eb-tsi" firstAttribute="centerY" secondItem="ugi-F5-n7U" secondAttribute="centerY" id="koq-aj-4YW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmx-bV-QA4">
+                                <rect key="frame" x="10" y="609" width="355" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ULQ-M2-9Z4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Accept &amp; Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="acceptAndContinueDidTapped:" destination="MG0-HT-hYD" eventType="touchUpInside" id="Iif-B0-Dk6"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nAa-do-uX1">
+                                <rect key="frame" x="20" y="105" width="335" height="484"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">By clicking “Accept &amp; Continue”, you consent to and authorize:
+
+1. Your electronic acceptance of the Albertsons Companies Terms of Use, and 
+
+2. Our storage of your card data (Name, Credit Card Number, Expiration Date) for purposes of future transactions using the app; (3) All transactions made via the company app using your mobile device, and (4) the company charging your selected payment method in the amount of each such transaction.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MG0-HT-hYD" id="j7J-tb-9cT"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ugi-F5-n7U" firstAttribute="top" secondItem="iRE-a6-iPE" secondAttribute="top" id="2z9-Hg-oPq"/>
+                            <constraint firstItem="nAa-do-uX1" firstAttribute="top" secondItem="ugi-F5-n7U" secondAttribute="bottom" constant="25" id="A4X-qK-sNR"/>
+                            <constraint firstItem="nAa-do-uX1" firstAttribute="leading" secondItem="iRE-a6-iPE" secondAttribute="leading" constant="20" id="Cnu-06-xqF"/>
+                            <constraint firstItem="iRE-a6-iPE" firstAttribute="bottom" secondItem="Lmx-bV-QA4" secondAttribute="bottom" constant="14" id="Q9f-MZ-Mmp"/>
+                            <constraint firstItem="Lmx-bV-QA4" firstAttribute="leading" secondItem="iRE-a6-iPE" secondAttribute="leading" constant="10" id="RNJ-nF-VkO"/>
+                            <constraint firstItem="iRE-a6-iPE" firstAttribute="trailing" secondItem="nAa-do-uX1" secondAttribute="trailing" constant="20" id="b5T-yS-HNb"/>
+                            <constraint firstItem="iRE-a6-iPE" firstAttribute="trailing" secondItem="Lmx-bV-QA4" secondAttribute="trailing" constant="10" id="ePV-as-Fmm"/>
+                            <constraint firstItem="Lmx-bV-QA4" firstAttribute="top" secondItem="nAa-do-uX1" secondAttribute="bottom" constant="20" id="pxf-Vs-Vrj"/>
+                            <constraint firstItem="ugi-F5-n7U" firstAttribute="leading" secondItem="iRE-a6-iPE" secondAttribute="leading" id="vby-bx-dAE"/>
+                            <constraint firstItem="ugi-F5-n7U" firstAttribute="trailing" secondItem="iRE-a6-iPE" secondAttribute="trailing" id="xCK-Lz-Z0P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iRE-a6-iPE"/>
+                    </view>
+                    <connections>
+                        <outlet property="termsTextView" destination="nAa-do-uX1" id="ST9-Mk-giB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKV-3z-6a2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="14" height="15"/>
+    </resources>
+</document>

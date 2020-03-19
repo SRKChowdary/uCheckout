@@ -1,0 +1,6 @@
+framework module ABCoreComponent {
+  umbrella header "ABCoreComponent-umbrella.h"
+
+  export *
+  module * { export * }
+}

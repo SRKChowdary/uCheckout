@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Development</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://abs-qa1.oktapreview.com</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>c84a45f894d64457b00f6405229991a4</string>
+		<key>clientId</key>
+		<string>0oad8aiwt7ZA7sWcz0h7</string>
+		<key>clientSecret</key>
+		<string>thQi8zkx3iRxbJ_l9bNz9G2wnDt9rSqX2fLgrKpW</string>
+		<key>refreshTokenKey</key>
+		<string>ausdvuyculRIYitXg0h7</string>
+	</dict>
+	<key>QA</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://abs-qa1.oktapreview.com</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>f0760b3c35e546a399432d091658c484</string>
+		<key>clientId</key>
+		<string>0oad8aiwt7ZA7sWcz0h7</string>
+		<key>clientSecret</key>
+		<string>thQi8zkx3iRxbJ_l9bNz9G2wnDt9rSqX2fLgrKpW</string>
+		<key>refreshTokenKey</key>
+		<string>ausdvuyculRIYitXg0h7</string>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>baseURL</key>
+		<string>https://albertsons.okta.com</string>
+		<key>Ocp-Apim-Subscription-key</key>
+		<string>f0760b3c35e546a399432d091658c484</string>
+		<key>clientId</key>
+		<string>0oa280cerrIv4ib4w2p7</string>
+		<key>clientSecret</key>
+		<string>LVEMzU7GxHp_jZ3ilfc5a20D9CJgMhuWYn4NkduM</string>
+		<key>refreshTokenKey</key>
+		<string>ausp6soxrIyPrm8rS2p6</string>
+	</dict>
+</dict>
+</plist>

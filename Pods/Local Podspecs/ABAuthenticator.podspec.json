@@ -1,0 +1,41 @@
+{
+  "name": "ABAuthenticator",
+  "version": "0.1.0",
+  "summary": "A short description of ABAuthenticator.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/J4UNimbus/ABAuthenticator",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gredd03": "gredd03@safeway.com"
+  },
+  "source": {
+    "git": "https://github.com/J4UNimbus/ABAuthenticator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "4.2",
+  "source_files": "ABAuthenticator/Classes/**/*",
+  "dependencies": {
+    "ABCoreNetwork": [
+
+    ],
+    "ABCoreComponent": [
+
+    ],
+    "JWTDecode": [
+
+    ],
+    "ABCoreUI": [
+
+    ],
+    "SnapKit": [
+      "4.2.0"
+    ]
+  },
+  "swift_version": "4.2"
+}

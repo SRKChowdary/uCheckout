@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menuData</key>
+	<array>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuAccount</string>
+			<key>menuDesc</key>
+			<string>Home</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>shoppingCartBlackShape</string>
+			<key>menuDesc</key>
+			<string>Cart</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuAccount</string>
+			<key>menuDesc</key>
+			<string>Account</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuPaymentmethod</string>
+			<key>menuDesc</key>
+			<string>Safeway Wallet</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuReceipthistory</string>
+			<key>menuDesc</key>
+			<string>Receipt History</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuFaqs</string>
+			<key>menuDesc</key>
+			<string>About</string>
+		</dict>
+		<dict>
+			<key>menuImage</key>
+			<string>icMenuLogout</string>
+			<key>menuDesc</key>
+			<string>Logout</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feedback-->
+        <scene sceneID="hgk-SS-gq6">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackViewController" id="CXh-qX-8OG" customClass="FeedbackViewController" customModule="UCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQ1-ft-wgP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SafewayLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hLT-fs-bIG">
+                                <rect key="frame" x="101" y="86" width="173" height="32"/>
+                                <accessibility key="accessibilityConfiguration" label="Safeway Logo">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="Fum-df-aRa"/>
+                                    <constraint firstAttribute="height" constant="32" id="Y82-tC-T1d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U Checkout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O46-Xl-YSO">
+                                <rect key="frame" x="138.5" y="126" width="98" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2it-ad-RmG"/>
+                                    <constraint firstAttribute="width" constant="98" id="VUO-hJ-LgJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilot particpants please provide feedback by using the button below or send email to ucheckout@albertsons.com." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUQ-cy-cC0">
+                                <rect key="frame" x="17" y="184" width="348" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7S-S5-wXd">
+                                <rect key="frame" x="10" y="609" width="355" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hE3-2h-7bC"/>
+                                </constraints>
+                                <state key="normal" title="Email Us">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailUSButtonAction:" destination="CXh-qX-8OG" eventType="touchUpInside" id="bJn-QT-2A3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YUQ-cy-cC0" firstAttribute="leading" secondItem="WdQ-rC-cQb" secondAttribute="leading" constant="17" id="1dU-pq-EI3"/>
+                            <constraint firstItem="WdQ-rC-cQb" firstAttribute="bottom" secondItem="m7S-S5-wXd" secondAttribute="bottom" constant="14" id="2kX-gq-QZ6"/>
+                            <constraint firstItem="YUQ-cy-cC0" firstAttribute="top" secondItem="O46-Xl-YSO" secondAttribute="bottom" constant="36" id="8va-c6-msk"/>
+                            <constraint firstItem="O46-Xl-YSO" firstAttribute="top" secondItem="hLT-fs-bIG" secondAttribute="bottom" constant="8" id="K7x-bC-DeW"/>
+                            <constraint firstItem="WdQ-rC-cQb" firstAttribute="trailing" secondItem="YUQ-cy-cC0" secondAttribute="trailing" constant="10" id="XlG-1t-xwW"/>
+                            <constraint firstItem="O46-Xl-YSO" firstAttribute="centerX" secondItem="UQ1-ft-wgP" secondAttribute="centerX" id="eEV-Tt-UjR"/>
+                            <constraint firstItem="hLT-fs-bIG" firstAttribute="centerX" secondItem="UQ1-ft-wgP" secondAttribute="centerX" id="gVZ-cO-7DU"/>
+                            <constraint firstAttribute="trailing" secondItem="m7S-S5-wXd" secondAttribute="trailing" constant="10" id="laX-2z-Z6s"/>
+                            <constraint firstItem="m7S-S5-wXd" firstAttribute="leading" secondItem="UQ1-ft-wgP" secondAttribute="leading" constant="10" id="tbX-ND-hw7"/>
+                            <constraint firstItem="hLT-fs-bIG" firstAttribute="top" secondItem="WdQ-rC-cQb" secondAttribute="top" constant="22" id="umh-aD-3zO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WdQ-rC-cQb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feedback" id="Lb6-GU-gtl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="menuIcon" id="Uzl-qk-7eU">
+                            <connections>
+                                <action selector="menuButtonAction:" destination="CXh-qX-8OG" id="sGk-8h-PP4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButtonOutlet" destination="Uzl-qk-7eU" id="H8D-EN-PZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2h-gU-6dK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1130.4000000000001" y="39.130434782608695"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DfQ-83-mNg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8xC-PX-l5P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ggM-fB-UbR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AppRedColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CXh-qX-8OG" kind="relationship" relationship="rootViewController" id="hrT-jm-ALZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohE-NO-9Fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.59999999999999" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SafewayLogo" width="134" height="25"/>
+        <image name="menuIcon" width="25" height="25"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.090196078431372548" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

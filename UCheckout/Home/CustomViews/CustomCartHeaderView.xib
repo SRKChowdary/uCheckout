@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="CustomCartHeaderView" customModule="UCheckout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSr-6s-ILZ">
+                    <rect key="frame" x="0.0" y="2.5" width="33.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="uaL-5E-uBh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etX-Ml-0EH">
+                    <rect key="frame" x="37.5" y="5" width="40" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icMenuCartWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Evo-Ni-MT3">
+                            <rect key="frame" x="0.0" y="14" width="21" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Aqd-vO-2GX"/>
+                                <constraint firstAttribute="width" constant="21" id="cI8-tU-YfX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdJ-9y-abv" customClass="CircularLabel" customModule="UCheckout" customModuleProvider="target">
+                            <rect key="frame" x="20" y="5" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Hy8-WW-PKD"/>
+                                <constraint firstAttribute="height" constant="20" id="fcx-wq-sOz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="AppRedColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Evo-Ni-MT3" firstAttribute="leading" secondItem="etX-Ml-0EH" secondAttribute="leading" id="FVA-Or-bjZ"/>
+                        <constraint firstAttribute="bottom" secondItem="MdJ-9y-abv" secondAttribute="bottom" constant="10" id="N3o-xm-qRk"/>
+                        <constraint firstAttribute="width" constant="40" id="Ol4-qg-PKf"/>
+                        <constraint firstAttribute="bottom" secondItem="Evo-Ni-MT3" secondAttribute="bottom" id="WNC-dz-K9W"/>
+                        <constraint firstAttribute="height" constant="35" id="chn-uR-sNf"/>
+                        <constraint firstItem="MdJ-9y-abv" firstAttribute="leading" secondItem="Evo-Ni-MT3" secondAttribute="trailing" constant="-1" id="uks-WK-6zJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="AppRedColor"/>
+            <color key="tintColor" name="AppRedColor"/>
+            <constraints>
+                <constraint firstItem="etX-Ml-0EH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="864-um-G3d"/>
+                <constraint firstItem="kSr-6s-ILZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hzv-i4-M2Z"/>
+                <constraint firstItem="etX-Ml-0EH" firstAttribute="leading" secondItem="kSr-6s-ILZ" secondAttribute="trailing" constant="4" id="hBb-Kq-VG9"/>
+                <constraint firstItem="kSr-6s-ILZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iCY-XF-nzk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cartCountLabel" destination="MdJ-9y-abv" id="fr6-y3-kGV"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icMenuCartWhite" width="20" height="20"/>
+        <namedColor name="AppRedColor">
+            <color red="0.89411764705882357" green="0.10196078431372549" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

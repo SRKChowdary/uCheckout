@@ -1,0 +1,29 @@
+{
+  "name": "ABCoreNetwork",
+  "version": "0.1.0",
+  "summary": "Albertsons iOS Library to manage Network Components.",
+  "description": "#This library\n #Provides convenient methods to create requests\n #Uses closure pattern to compose generic responses\n #Can be used for adding custom validation for the responses and HTTP Codes\n# Provides wrapper classes to manage dependent and concurrent network requests",
+  "homepage": "https://github.com/J4U-Nimbus/ABCoreNetwork",
+  "license": {
+    "type": "@copyright Albertsons Inc",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gredd03": "gredd03@safeway.com"
+  },
+  "source": {
+    "git": "https://github.com/J4U-Nimbus/ABCoreNetwork.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "4.2",
+  "source_files": "ABCoreNetwork/Classes/**/*",
+  "dependencies": {
+    "ABCoreComponent": [
+
+    ]
+  },
+  "swift_version": "4.2"
+}
